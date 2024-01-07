@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #ffefd5; /* Light background */
+  color: #333; /* Dark text color */
+}
+
+.header {
+  text-align: center;
+  padding: 50px 0;
+  background-color: black; /* Green header background */
+  color: #fff; /* Light text color */
+}
+
+.header h1 {
+  font-family: 'Impact', sans-serif;
+  font-size: 4em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.timeline-event {
+  width: 80%;
+  max-width: 800px;
+  margin-bottom: 50px;
+  background-color: #fff; /* White event background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-event:hover {
+  transform: translateY(-5px); /* Add a slight lift on hover */
+}
+
+.timeline-event h2 {
+  font-size: 2em;
+  color: #ff8c00; /* Orange title color */
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow effect */
+}
+
+.timeline-event p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.timeline-event img {
+  width: 100%;
+  display: block;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.timeline-event:hover img {
+  transform: scale(1.05); /* Scale up image on hover */
+}
